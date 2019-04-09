@@ -1,0 +1,7 @@
+build/
+Out/
+.vscode/
+
+*.log
+*.synctex.gz
+*.aux
