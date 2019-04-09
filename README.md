@@ -1,6 +1,6 @@
-# Computer Vision Programming Assignment 1 - Image Normaliser
+# Computer Vision Programming Assignment 2 - Compression and Hough Transform
 
-My first programming assignment for CS 485 - Computer Vision at UNR.
+My second programming assignment for CS 485 - Computer Vision at UNR.
 
 ## How to build
 Create a new directory `build/` and navigate to it. Then run cmake to generate appropriate makefiles:
@@ -21,11 +21,15 @@ Then run the generated makefiles:
 ```
 
 ## Command Usage
-After building, run the program as follows:
+After building, run the programs as follows:
 ```
-	./normalise <input directory> <output directory> [-v]
+	./toonify <input directory> <output directory> [-v]
+	./compress <input directory> <output directory> [-v]
+	./trees <input file> [-v]
 ```
 Failure to meet the above syntax will result in a help menu with more detailed information. With the included input/output directories (and in the `build/` directory), the command can be run as follows:
 ```
-	./normalise ../Images/ ../Out/
+	./toonify ../Images/P-1/ ../Out/P-1/
+	./compress ../Images/P-1/ ../Out/P-1/
+	./trees ../Images/P-2/LiDAR01.png
 ```
